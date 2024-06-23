@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  mlops-lab3-app:
+    container_name: mlops-container-lab3
+    image: mlops-lab3-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - C:\IDE\mlops\lab3:/usr/src/app
+    command: sh start.sh
